@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
           name="keyword"
           content="이사청소, 대청소, 청소대행, 입주청소, 안산 청소, 인천 청소, 수원 청소, 광명 청소, 대청소, 수도권 청소, 경기 청소, 전국 청소, 서울 청소"
         />
-        <meta property="og:url" content="https://redkiwiapp.com" />
+        <meta property="og:url" content="https://a-llclean.com" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"

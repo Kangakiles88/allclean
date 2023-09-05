@@ -27,12 +27,12 @@ const Footer = () => {
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             사업자등록번호: 117-16-96538
             <Link
-              href="tel:01067554922"
+              href="tel:01099204922"
               className="text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 hover:text-indigo-600"
               rel="noopener noreferrer"
               target="_blank"
             >
-              HP: 010-6755-4922
+              HP: 010-9920-4922
             </Link>
           </p>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
@@ -41,7 +41,7 @@ const Footer = () => {
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             Copyright © 2023 올클린 All Rights Reserved —
             <Link
-              href="tel:01067554922"
+              href="tel:01099204922"
               className="text-gray-600 ml-1 hover:text-indigo-600"
               rel="noopener noreferrer"
               target="_blank"
