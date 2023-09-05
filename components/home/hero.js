@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
           <div className="flex justify-center">
             <Link
-              href="tel:+821067554922"
+              href="tel:01067554922"
               className="inline-flex text-white bg-slate-900  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
               견적문의

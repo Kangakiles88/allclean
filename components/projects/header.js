@@ -29,7 +29,7 @@ const Header = () => {
           <a className="mr-5 hover:text-gray-900">4번 메뉴</a>
         </nav>
         <Link
-          href="tel:+821067554922"
+          href="tel:01067554922"
           className="text-white inline-flex items-center bg-slate-900 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600  rounded text-base mt-4 md:mt-0"
         >
           연락하기
