@@ -30,6 +30,14 @@ function MyApp({ Component, pageProps }) {
           content="How could you speak English if you cannot understand it? It's time to improve your English listening skills! Try RedKiwi right now :)"
         />
         <meta property="og:image" content="redkiwi.jpg" />
+        <meta
+          name="google-site-verification"
+          content="miivtKrgbqkBQWCqre84LuUPrqs1g2sdzmyjZxVUTFM"
+        />
+        <meta
+          name="naver-site-verification"
+          content="e6b6cb1106aaa0e6cc76b8ceda7ad7c2d72adc7e"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
