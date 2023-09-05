@@ -1,6 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import StepAnimation from "../animations/stepAnimation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBroom,
+  faCalendarDays,
+  faCircleCheck,
+  faRectangleList,
+  faRulerCombined,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Step = () => {
   return (
@@ -13,25 +21,16 @@ const Step = () => {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+                <FontAwesomeIcon icon={faRulerCombined} className="w-5" />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 1
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  청소를 원하는 공간의 대략적인 면적을 측정해주세요. 특별히
+                  청소를 원하시는 공간에 대해 자세하게 말씀해주시면 좀 더 정확한
+                  금액 산출이 가능합니다.
                 </p>
               </div>
             </div>
@@ -40,25 +39,16 @@ const Step = () => {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
+                <FontAwesomeIcon icon={faRectangleList} className="w-5" />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 2
                 </h2>
                 <p className="leading-relaxed">
-                  Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                  slow-carb health goth, vape typewriter.
+                  원하시는 청소 종류를 선택해주세요. 입주 청소, 이사 청소 등
+                  고객님이 원하시는 청소 종류를 말씀해주시면 알맞은 장비와
+                  약품을 선정합니다.
                 </p>
               </div>
             </div>
@@ -67,26 +57,16 @@ const Step = () => {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="5" r="3"></circle>
-                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                </svg>
+                <FontAwesomeIcon icon={faCalendarDays} className="w-5" />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 3
                 </h2>
                 <p className="leading-relaxed">
-                  Coloring book nar whal glossier master cleanse umami. Salvia
-                  +1 master cleanse blog taiyaki.
+                  원하시는 날짜와 시간을 고객님이 편하신 일정에 따라 조율하여
+                  방문 일정을 설정합니다.. 최대한 고객님의 스케줄에 맞춰
+                  편의성을 제공할 수 있도록 하고 있습니다.
                 </p>
               </div>
             </div>
@@ -95,51 +75,30 @@ const Step = () => {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
+                <FontAwesomeIcon icon={faBroom} className="w-5" />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 4
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  고객님과 조율하여 확정된 날짜와 시간에 방문하여, 청소를
+                  진행합니다. 현장 점검 후 컨디션에 따라 좀 더 깨끗한 공간으로
+                  거듭날 수 있도록 브리핑 및 청소 방법을 협의하여 작업을
+                  실행합니다.
                 </p>
               </div>
             </div>
             <div className="flex relative">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                  <path d="M22 4L12 14.01l-3-3"></path>
-                </svg>
+                <FontAwesomeIcon icon={faCircleCheck} className="w-5" />
               </div>
               <div className="flex-grow pl-4">
-                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   FINISH
                 </h2>
                 <p className="leading-relaxed">
-                  Pitchfork ugh tattooed scenester echo park gastropub whatever
-                  cold-pressed retro.
+                  청소 완료 후 고객님 확인이 이뤄진 후 결제가 진행됩니다.
                 </p>
               </div>
             </div>
@@ -148,13 +107,6 @@ const Step = () => {
           <div className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12">
             <StepAnimation />
           </div>
-          {/* <Image
-            width="1200"
-            height="500"
-            className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-            src="https://dummyimage.com/1200x500"
-            alt="step"
-          /> */}
         </div>
       </div>
     </section>

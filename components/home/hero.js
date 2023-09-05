@@ -35,7 +35,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center rounded-lg bg-white text-center shadow-xl shadow-black/5 dark:shadow-black/30">
+        <div className="sm:items-center lg:max-w-lg lg:w-full md:w-full md:items-center w-5/6 flex justify-center rounded-lg bg-white shadow-xl shadow-black/5 dark:shadow-black/30">
           <HeroAnimation />
         </div>
       </div>

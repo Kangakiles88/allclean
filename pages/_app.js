@@ -31,6 +31,11 @@ function MyApp({ Component, pageProps }) {
         />
         <meta property="og:image" content="redkiwi.jpg" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
       <Component {...pageProps} />
     </>

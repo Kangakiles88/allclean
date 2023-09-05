@@ -60,7 +60,7 @@ const Feature = () => {
               <FontAwesomeIcon className="w-8" icon={faCalendarDays} />
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 className="text-gray-900 text-lg title-font font-bold mb-3">
                 편의성과 가성비
               </h2>
               <p className="leading-relaxed text-base">
@@ -89,7 +89,7 @@ const Feature = () => {
               <FontAwesomeIcon className="w-8" icon={faHandsPraying} />
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+              <h2 className="text-gray-900 text-lg title-font font-bold mb-3">
                 안전과 신뢰
               </h2>
               <p className="leading-relaxed text-base">
