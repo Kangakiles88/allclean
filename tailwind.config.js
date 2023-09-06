@@ -8,7 +8,12 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern":
+          "url('/public/steven-ungermann-CVTmLMv5oG4-unsplash.jpg)",
+      },
+    },
   },
   plugins: [],
 };

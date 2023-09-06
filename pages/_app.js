@@ -39,10 +39,11 @@ function MyApp({ Component, pageProps }) {
           content="e6b6cb1106aaa0e6cc76b8ceda7ad7c2d72adc7e"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
-          type="text/css"
         />
       </Head>
       <Component {...pageProps} />

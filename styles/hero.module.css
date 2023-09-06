@@ -1,0 +1,4 @@
+.hero {
+  @apply text-gray-600 w-full lg:h-[100vh] md:h-[50vh] bg-[url('/steven-ungermann-CVTmLMv5oG4-unsplash.jpg')] bg-cover bg-center
+  mx-auto flex px-5 py-24 md:flex-row flex-col after:items-center border-b-2 relative;
+}
