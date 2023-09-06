@@ -23,13 +23,13 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="RedKiwi, YouTube-based English Trainer"
+          content="올클린 이사, 입주, 사무실 청소 ALLCLEAN 꺠끗한 공간 행복한 시작"
         />
         <meta
           property="og:description"
-          content="How could you speak English if you cannot understand it? It's time to improve your English listening skills! Try RedKiwi right now :)"
+          content="프로페셔널한 입주, 이사, 사무실 청소로 당신의 새 시작을 완벽하게 지원합니다. 이사와 입주, 리모델링, 새로운 계절을 맞이하기 위한 대청소를 올클린과 함께하세요"
         />
-        <meta property="og:image" content="redkiwi.jpg" />
+        <meta property="og:image" content="/ogImage.png" />
         <meta
           name="google-site-verification"
           content="miivtKrgbqkBQWCqre84LuUPrqs1g2sdzmyjZxVUTFM"
