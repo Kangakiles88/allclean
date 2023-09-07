@@ -5,6 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Feature = () => {
@@ -35,7 +36,7 @@ const Feature = () => {
                 전문성과 품질
               </h2>
               <p className="leading-relaxed text-base">
-                저희 올클린 직원 일동은 엄선된 교육을 통해 고객에게 최상의
+                저희 털보클린 직원 일동은 엄선된 교육을 통해 고객에게 최상의
                 서비스를 제공합니다. 안전하고 효과적인 청소제를 사용하여
                 고객님의 공간을 더욱 깨끗하게 만들어 드립니다.
               </p>
@@ -93,7 +94,7 @@ const Feature = () => {
                 안전과 신뢰
               </h2>
               <p className="leading-relaxed text-base">
-                저희 올클린 청소 서비스는 고객들의 만족도가 높고 신뢰성을
+                저희 털보클린 청소 서비스는 고객들의 만족도가 높고 신뢰성을
                 보장합니다. 현장에 맞는 맞춤형 청소 기법을 통해 최상의 컨디션을
                 끌어올리기 위하여 노력하고 있습니다.
               </p>
@@ -114,9 +115,12 @@ const Feature = () => {
             </div>
           </div>
         </div>
-        <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Button
-        </button>
+        <Link
+          href="tel:01099204922"
+          className="w-[140px] h-[40px] flex items-center justify-center mx-auto mt-16 text-white bg-indigo-500 border-0  px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        >
+          견적문의
+        </Link>
       </div>
     </section>
   );

@@ -1,10 +1,9 @@
 "use client";
 
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import React, { useState } from "react";
-import Hamburger from "../home/hamburger";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,27 +11,58 @@ const Header = () => {
   const handleMenuOpen = () => {
     setIsOpen(!isOpen);
   };
+  const handleResize = () => {
+    if (window.innerWidth >= 768) {
+      // 768px는 Tailwind CSS의 md 뷰포인트
+      setIsOpen(false);
+    }
+  };
 
-  return isOpen === false ? (
+  useEffect(() => {
+    // 컴포넌트가 마운트될 때 이벤트 리스너 추가
+    window.addEventListener("resize", handleResize);
+
+    // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
     <header>
-      <nav className="container flex justify-around items-center py-8 mx-auto bg-transparent">
+      <nav
+        className={`container flex ${
+          isOpen ? "justify-center" : "justify-around"
+        } items-center py-8 mx-auto bg-transparent`}
+      >
         <div className="flex items-center">
           <h3 className="text-[0.9rem] sm:text-[0.9rem] md:text-1xl lg:text-2xl font-bold text-sky-500">
-            A L L C L E A N
+            TURBO CLEAN
           </h3>
         </div>
-        {/* <!-- left header section --> */}
-        <div className="hidden flex-row md:flex-row lg:flex items-center font-bold text-slate-700 md:block space-x-10 ">
-          <Link href="/">Home</Link>
-          <Link href="/service">서비스</Link>
-          <Link href="/project">시공갤러리</Link>
-          <Link href="/FAQ">FAQ</Link>
+        <div className="lg:hidden">
+          {!isOpen && (
+            <button onClick={handleMenuOpen}>
+              <FontAwesomeIcon icon={faBars} className="w-6 h-6 text-sky-600" />
+            </button>
+          )}
         </div>
-        {/* <!-- right header section --> */}
-        <div className="flex items-center space-x-2">
+        <div className={`lg:flex ${isOpen ? "" : "hidden"}`}>
+          <div className="flex-row hidden lg:flex items-center font-bold text-slate-700 space-x-10">
+            <Link href="/">Home</Link>
+            <Link href="/service">서비스</Link>
+            <Link href="/project">시공갤러리</Link>
+            <Link href="/FAQ">FAQ</Link>
+          </div>
+        </div>
+        <div
+          className={`hidden lg:flex items-center space-x-2 ${
+            isOpen ? "" : "hidden"
+          }`}
+        >
           <Link
             href="tel:01099204922"
-            className="w-30 hidden md:hidden lg:flex text-white font-bold items-center justify-center bg-sky-500 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600  rounded text-base mt-4 md:mt-0"
+            className="w-30 flex row text-white font-bold items-center justify-center bg-sky-500 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0"
           >
             <FontAwesomeIcon
               icon={faPhone}
@@ -42,11 +72,18 @@ const Header = () => {
           </Link>
         </div>
       </nav>
+      {isOpen && (
+        <div className="flex flex-col items-center space-y-5 lg:hidden">
+          <Link href="/">Home</Link>
+          <Link href="/service">서비스</Link>
+          <Link href="/project">시공갤러리</Link>
+          <Link href="/FAQ">FAQ</Link>
+          <button onClick={handleMenuOpen} className="text-red-500">
+            <FontAwesomeIcon icon={faClose} />
+          </button>
+        </div>
+      )}
     </header>
-  ) : (
-    <div className="-mr-2 block">
-      <Hamburger isOpen={isOpen} handleMenuOpen={handleMenuOpen} />
-    </div>
   );
 };
 
