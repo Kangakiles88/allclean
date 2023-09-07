@@ -31,18 +31,18 @@ const Footer = () => {
             주소: 인천광역시 연수구 컨벤시아대로252번길 50(송도 더샵 퍼스트파크)
           </p>
           <Link
-            href="tel:01099204922"
+            href="tel:01088806076"
             rel="noopener noreferrer"
             target="_blank"
           >
             <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 hover:text-indigo-600">
-              HP: 010-9920-4922
+              HP: 010-8880-6076
             </p>
           </Link>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             Copyright © 2023 털보클린 All Rights Reserved —
             <Link
-              href="tel:01099204922"
+              href="tel:01088806076"
               className="text-gray-600 ml-1 hover:text-indigo-600"
               rel="noopener noreferrer"
               target="_blank"

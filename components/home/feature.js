@@ -116,7 +116,7 @@ const Feature = () => {
           </div>
         </div>
         <Link
-          href="tel:01099204922"
+          href="tel:01088806076"
           className="w-[140px] h-[40px] flex items-center justify-center mx-auto mt-16 text-white bg-indigo-500 border-0  px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
         >
           견적문의
