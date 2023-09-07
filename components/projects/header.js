@@ -1,6 +1,11 @@
 "use client";
 
-import { faBars, faClose, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faPhone,
+  faCirclexmark,
+} from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -36,7 +41,7 @@ const Header = () => {
         } items-center py-8 mx-auto bg-transparent`}
       >
         <div className="flex items-center">
-          <h3 className="text-[0.9rem] sm:text-[0.9rem] md:text-1xl lg:text-2xl font-bold text-sky-500">
+          <h3 className="text-[1.5rem] sm:text-[1.5rem] md:text-1xl lg:text-2xl font-bold text-sky-500">
             TURBO CLEAN
           </h3>
         </div>
@@ -78,8 +83,8 @@ const Header = () => {
           <Link href="/service">서비스</Link>
           <Link href="/project">시공갤러리</Link>
           <Link href="/FAQ">FAQ</Link>
-          <button onClick={handleMenuOpen} className="text-red-500">
-            <FontAwesomeIcon icon={faClose} />
+          <button onClick={handleMenuOpen} className="mb-8 text-red-400">
+            Close Menu
           </button>
         </div>
       )}
