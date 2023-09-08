@@ -41,9 +41,11 @@ const Header = () => {
         } items-center py-8 mx-auto bg-transparent`}
       >
         <div className="flex items-center">
-          <h3 className="text-[1.5rem] sm:text-[1.5rem] md:text-1xl lg:text-2xl font-bold text-sky-500">
-            TURBO CLEAN
-          </h3>
+          <Link href="/">
+            <h3 className="text-[1.5rem] sm:text-[1.5rem] md:text-1xl lg:text-2xl font-bold text-sky-500">
+              TURBO CLEAN
+            </h3>
+          </Link>
         </div>
         <div className="lg:hidden">
           {!isOpen && (

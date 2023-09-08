@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Noto Sans KR", sans-serif;
+@font-face {
+  font-family: "HakgyoansimWoojuR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "KBO-Dia-Gothic_bold";
+  font-weight: 700;
+}
+
+body {
+  font-family: "HakgyoansimWoojuR";
+  font-weight: 700;
 }

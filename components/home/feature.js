@@ -12,19 +12,22 @@ const Feature = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto border-b-2">
-        <div className="text-center mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+        <div className="text-center mb-20 ">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-sky-600 mb-4 animate-fade-up animate-ease-linear">
             최상의 청소 경험을 위한 우리의 약속
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-            우리는 전문성, 편의성, 그리고 안전을 통해 당신의 생활 공간을 빛나게
-            만들겠다는 약속을 드립니다. 고객님의 만족과 행복이 우리의 최우선
-            목표이며, 그를 위해 우리는 언제나 더 나은 서비스를 제공하기 위해
-            노력하고 있습니다
-          </p>
-          <div className="flex mt-6 justify-center">
+
+          <div className="flex mt-6 justify-center animate-once">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
+        </div>
+        <div className="flex flex-wrap mb-6">
+          <p className="text-base text-center mb-5 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+            우리는 전문성, 편의성, 그리고 안전을 통해 당신의 생활 공간을 빛나게
+            만들겠다는 약속을 드립니다. <br /> 고객님의 만족과 행복이 우리의
+            최우선 목표이며, 그를 위해 우리는 언제나 더 나은 서비스를 제공하기
+            위해 노력하고 있습니다
+          </p>
         </div>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
