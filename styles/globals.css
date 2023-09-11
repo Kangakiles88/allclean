@@ -17,14 +17,13 @@
   font-style: normal;
 }
 
-h1,
-h2,
 h3 {
   font-family: "KBO-Dia-Gothic_bold";
   font-weight: 700;
 }
 
+h1,
+h2,
 body {
-  font-family: "HakgyoansimWoojuR";
-  font-weight: 700;
+  font-family: "Noto Sans KR";
 }

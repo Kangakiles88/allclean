@@ -7,19 +7,19 @@ const Hero = () => {
     <section>
       <div className={styles.hero}>
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-        <div className="w-full flex flex-col text-center items-center justify-center z-10">
+        <div className="animate-fadeIn w-full flex flex-col text-center items-center justify-center z-10">
           <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl mb-4 font-bold text-sky-600">
             T U R B O C L E A N{" "}
             <span className="text-white">- 깨끗한 공간, 행복한 시작</span>
           </h1>
 
-          <h3 className="text-white text-[0.8rem]  sm:text-[0.8rem] md:text-1xl lg:text-2xl  mb-1">
+          <h2 className="text-white text-[0.8rem]  sm:text-[0.8rem] md:text-1xl lg:text-2xl  mb-1">
             당신의 새로운 시작을 위한 완벽한 청소 서비스{" "}
-          </h3>
-          <h3 className="text-white text-[0.8rem]  sm:text-[0.8rem] md:text-1xl lg:text-2xl  mb-6">
+          </h2>
+          <h2 className="text-white text-[0.8rem]  sm:text-[0.8rem] md:text-1xl lg:text-2xl  mb-6">
             {" "}
             털보클린에게 맡겨주세요
-          </h3>
+          </h2>
 
           <div className="flex justify-center">
             <Link

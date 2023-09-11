@@ -1,18 +1,11 @@
 import React from "react";
-import styles from "../styles/service.module.css";
-import Header from "../components/projects/header";
+import Layout from "../components/projects/layout";
+import Service from "../components/home/service";
 
 const service = () => {
   return (
     <>
-    <Header />
-      <section className="text-gray-600 body-font">
-        <div className={styles.service}>
-          <div className="container">
-            <h1>ABOUT 털보클린</h1>
-          </div>
-        </div>
-      </section>
+      <Service />
     </>
   );
 };

@@ -9,8 +9,15 @@ import {
   faRectangleList,
   faRulerCombined,
 } from "@fortawesome/free-solid-svg-icons";
+import { useInView } from "react-intersection-observer";
 
 const Step = () => {
+  const [ref1, inView1] = useInView();
+  const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
+  const [ref4, inView4] = useInView();
+  const [ref5, inView5] = useInView();
+
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex items-center justify-center flex-wrap">
@@ -20,10 +27,20 @@ const Step = () => {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div
+                ref={ref1}
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                  inView1 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <FontAwesomeIcon icon={faRulerCombined} className="w-5" />
               </div>
-              <div className="flex-grow pl-4">
+              <div
+                ref={ref1}
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                  inView1 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 1
                 </h2>
@@ -38,10 +55,20 @@ const Step = () => {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div
+                ref={ref2}
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                  inView2 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <FontAwesomeIcon icon={faRectangleList} className="w-5" />
               </div>
-              <div className="flex-grow pl-4">
+              <div
+                ref={ref2}
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                  inView2 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 2
                 </h2>
@@ -56,10 +83,20 @@ const Step = () => {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div
+                ref={ref3}
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                  inView3 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <FontAwesomeIcon icon={faCalendarDays} className="w-5" />
               </div>
-              <div className="flex-grow pl-4">
+              <div
+                ref={ref3}
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                  inView3 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 3
                 </h2>
@@ -74,10 +111,20 @@ const Step = () => {
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div
+                ref={ref4}
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                  inView4 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <FontAwesomeIcon icon={faBroom} className="w-5" />
               </div>
-              <div className="flex-grow pl-4">
+              <div
+                ref={ref4}
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                  inView4 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   STEP 4
                 </h2>
@@ -90,10 +137,20 @@ const Step = () => {
               </div>
             </div>
             <div className="flex relative">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div
+                ref={ref5}
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                  inView5 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <FontAwesomeIcon icon={faCircleCheck} className="w-5" />
               </div>
-              <div className="flex-grow pl-4">
+              <div
+                ref={ref5}
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                  inView5 ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 <h2 className="font-bold title-font text-sm text-violet-900 mb-1 tracking-wider">
                   FINISH
                 </h2>
@@ -104,7 +161,12 @@ const Step = () => {
             </div>
           </div>
 
-          <div className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12">
+          <div
+            ref={ref3}
+            className={`lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 transition-opacity duration-700 delay-500 ${
+              inView3 ? "opacity-100" : "opacity-0"
+            }`}
+          >
             <StepAnimation />
           </div>
         </div>

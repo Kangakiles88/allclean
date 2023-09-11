@@ -7,12 +7,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const Feature = () => {
+  const [ref1, inView1] = useInView({
+    threshold: 0.1,
+  });
+  const [ref2, inView2] = useInView({
+    threshold: 0.1,
+  });
+  const [ref3, inView3] = useInView({
+    threshold: 0.1,
+  });
+  const [ref4, inView4] = useInView({
+    threshold: 0.1,
+  });
+
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto border-b-2">
-        <div className="text-center mb-20 ">
+        <div
+          ref={ref1}
+          className={`text-center mb-20 transition-opacity duration-700 ease-in-out delay-100 ${
+            inView1 ? "opacity-100" : "opacity-0"
+          }`}
+        >
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-sky-600 mb-4 animate-fade-up animate-ease-linear">
             최상의 청소 경험을 위한 우리의 약속
           </h1>
@@ -21,7 +40,12 @@ const Feature = () => {
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
         </div>
-        <div className="flex flex-wrap mb-6">
+        <div
+          ref={ref2}
+          className={`flex flex-wrap mb-6 transition-opacity duration-700 ease-in-out delay-200 ${
+            inView2 ? "opacity-100" : "opacity-0"
+          }`}
+        >
           <p className="text-base text-center mb-5 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
             우리는 전문성, 편의성, 그리고 안전을 통해 당신의 생활 공간을 빛나게
             만들겠다는 약속을 드립니다. <br /> 고객님의 만족과 행복이 우리의
@@ -29,7 +53,12 @@ const Feature = () => {
             위해 노력하고 있습니다
           </p>
         </div>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div
+          ref={ref3}
+          className={`flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 duration-700 ease-in-out delay-300 ${
+            inView3 ? "opacity-100" : "opacity-0"
+          }`}
+        >
           <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
               <FontAwesomeIcon className="w-8" icon={faUserTie} />
@@ -119,8 +148,11 @@ const Feature = () => {
           </div>
         </div>
         <Link
+          ref={ref4}
           href="tel:01088806076"
-          className="w-[140px] h-[40px] flex items-center justify-center mx-auto mt-16 text-white bg-indigo-500 border-0  px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          className={`w-[140px] h-[40px] flex items-center justify-center mx-auto mt-16 text-white bg-indigo-500 border-0  px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg duration-700 ease-in-out delay-400 ${
+            inView4 ? "opacity-100" : "opacity-0"
+          }`}
         >
           견적문의
         </Link>

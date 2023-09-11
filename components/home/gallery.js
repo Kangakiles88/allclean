@@ -1,10 +1,19 @@
 import Image from "next/image";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const Gallery = () => {
+  const [ref1, inView1] = useInView();
+  const [ref2, inView2] = useInView();
+
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex flex-wrap">
+      <div
+        ref={ref1}
+        className={`container px-5 py-24 mx-auto flex flex-wrap transition-opacity ease-in duration-700 delay-200 ${
+          inView1 ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div className="flex w-full mb-20 flex-wrap">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
             <span className="font-bold text-sky-600">TURBO Clean</span> Gallery
@@ -13,7 +22,12 @@ const Gallery = () => {
             갤러리소개
           </p>
         </div>
-        <div className="flex flex-wrap md:-m-2 -m-1">
+        <div
+          ref={ref2}
+          className={`flex flex-wrap md:-m-2 -m-1 transition-opacity ease-in duration-800 delay-100 ${
+            inView2 ? "opacity-100" : "opacity-0"
+          }`}
+        >
           <div className="flex flex-wrap w-1/2">
             <div className="md:p-2 p-1 w-1/2 hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
               <Image
