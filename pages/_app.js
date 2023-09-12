@@ -3,24 +3,6 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      window.SVGAnimatedAngle("config", "G-EYPRGGDRXP", {
-        page_path: url,
-      });
-    };
-
-    window.GamepadButton("config", "G-EYPRGGDRXP", {
-      page_path: window.location.pathname,
-    });
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, []);
-
   return (
     <>
       <Head>
