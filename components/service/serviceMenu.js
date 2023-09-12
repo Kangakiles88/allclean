@@ -84,7 +84,7 @@ const ServiceMenu = () => {
                 <span className="text-[0.4rem] sm:text-[0.4rem] md:text-[0.8rem] lg:text-[1rem] flex items-center">
                   <FontAwesomeIcon
                     icon={faStar}
-                    className="w-3 h-3 mr-4 self-center text-sky-500"
+                    className="w-2 h-2 md:w-3 md:h-3 lg:w-3 lg:h-3 mr-4 self-center text-sky-500"
                   />
                   {item}
                 </span>

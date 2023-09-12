@@ -5,6 +5,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5DFF4H2K');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, nofollow " />
@@ -17,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="털보클린 입주청소" />
         <meta
           name="keyword"
-          content="이사청소, 대청소, 청소대행, 입주청소, 안산 청소, 인천 청소, 수원 청소, 광명 청소, 대청소, 수도권 청소, 경기 청소, 전국 청소, 서울 청소"
+          content="이사청소, 입주청소, 사무실청소, 대청소, 청소대행, 입주청소, 안산 청소, 인천 청소, 수원 청소, 광명 청소, 대청소, 수도권 청소, 경기 청소, 전국 청소, 서울 청소"
         />
         <meta property="og:url" content="https://turboclea-n.com" />
         <meta property="og:type" content="website" />
@@ -38,6 +45,10 @@ function MyApp({ Component, pageProps }) {
           name="naver-site-verification"
           content="713835fa0e8b06eb884d5e39b6f9aeb1527598d8"
         />
+        <meta name="geo.region" content="KR-GG" />
+        <meta name="content-language" content="ko" />
+
+        <link rel="canonical" href="https://turboclea-n.com" />
 
         <link rel="icon" href="/favicon.ico" />
 
