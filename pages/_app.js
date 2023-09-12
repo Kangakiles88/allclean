@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  const GA_ID = process.env.GOOGLE_ANALYTICS_ID;
+  const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
 
   return (
     <>
