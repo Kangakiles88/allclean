@@ -1,10 +1,43 @@
 import Head from "next/head";
 import "../styles/globals.css";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      window.SVGAnimatedAngle("config", "G-EYPRGGDRXP", {
+        page_path: url,
+      });
+    };
+
+    window.GamepadButton("config", "G-EYPRGGDRXP", {
+      page_path: window.location.pathname,
+    });
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, []);
+
   return (
     <>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-EYPRGGDRXP"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EYPRGGDRXP');
+            `,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
