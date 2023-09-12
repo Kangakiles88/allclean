@@ -3,12 +3,14 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const GA_ID = process.env.GOOGLE_ANALYTICS_ID;
+
   return (
     <>
       <Head>
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-EYPRGGDRXP"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -16,7 +18,7 @@ function MyApp({ Component, pageProps }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-EYPRGGDRXP');
+              gtag('config', '${GA_ID}');
             `,
           }}
         />
