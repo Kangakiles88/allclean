@@ -29,7 +29,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref1}
-                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-400 ${
                   inView1 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -37,7 +37,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref1}
-                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-400 ${
                   inView1 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -57,7 +57,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref2}
-                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-400 ${
                   inView2 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -65,7 +65,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref2}
-                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-400 ${
                   inView2 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -85,7 +85,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref3}
-                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-400 ${
                   inView3 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -93,7 +93,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref3}
-                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-400 ${
                   inView3 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -113,7 +113,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref4}
-                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-400 ${
                   inView4 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -121,7 +121,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref4}
-                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-400 ${
                   inView4 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -139,7 +139,7 @@ const Step = () => {
             <div className="flex relative">
               <div
                 ref={ref5}
-                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-500 ${
+                className={`flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10 transition-opacity duration-700 delay-400 ${
                   inView5 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -147,7 +147,7 @@ const Step = () => {
               </div>
               <div
                 ref={ref5}
-                className={`flex-grow pl-4 transition-opacity duration-700 delay-500 ${
+                className={`flex-grow pl-4 transition-opacity duration-700 delay-400 ${
                   inView5 ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -162,9 +162,9 @@ const Step = () => {
           </div>
 
           <div
-            ref={ref3}
-            className={`lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 transition-opacity duration-700 delay-500 ${
-              inView3 ? "opacity-100" : "opacity-0"
+            ref={ref5}
+            className={`lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 transition-opacity duration-700 delay-400 ${
+              inView5 ? "opacity-100" : "opacity-0"
             }`}
           >
             <StepAnimation />

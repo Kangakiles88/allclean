@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  faBars,
-  faPhone,
-  faCirclexmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -37,12 +33,12 @@ const Header = () => {
     <header>
       <nav
         className={`container flex ${
-          isOpen ? "justify-center" : "justify-around"
+          isOpen ? "justify-center" : "justify-between"
         } items-center py-8 mx-auto bg-transparent`}
       >
         <div className="flex items-center">
           <Link href="/">
-            <h3 className="text-[1.5rem] sm:text-[1.5rem] md:text-1xl lg:text-2xl font-bold text-sky-500">
+            <h3 className="text-[1.5rem] sm:text-[1.5rem] md:text-1xl lg:text-2xl font-bold text-sky-500 ml-2">
               TURBO CLEAN
             </h3>
           </Link>
@@ -50,7 +46,10 @@ const Header = () => {
         <div className="lg:hidden">
           {!isOpen && (
             <button onClick={handleMenuOpen}>
-              <FontAwesomeIcon icon={faBars} className="w-6 h-6 text-sky-600" />
+              <FontAwesomeIcon
+                icon={faBars}
+                className="w-6 h-6 text-sky-600 mr-4"
+              />
             </button>
           )}
         </div>

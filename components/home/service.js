@@ -34,7 +34,7 @@ const Service = () => {
               털보클린 서비스
             </h2>
             <div className="flex flex-wrap items-center justify-between w-full">
-              <div className="w-1/2 text-[1rem]">
+              <div className="w-full sm:w-full md:w-full lg:w-1/2 text-[0.7rem] md:text-[0.8rem] lg:text-[1rem]">
                 <p className="mb-10">
                   이사만으로도 충분히 받는 스트레스 저희 터보클린이
                   덜어드리겠습니다. <br /> 새로운 공간에 시작을 터보클린에게
