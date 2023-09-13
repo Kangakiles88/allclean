@@ -26,60 +26,60 @@ const Gallery = () => {
           }`}
         >
           <div className="flex flex-wrap w-1/2">
-            <div className="md:p-2 p-1 w-1/2 hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
+            <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition-all hover:bg-white hover:rounded-xl">
               <Image
                 width="500"
                 height="300"
-                alt="gallery"
+                alt="영종도 입주청소"
                 className="w-full object-cover h-full object-center block"
-                src="/500x300.png"
+                src="/gallery/500300영종도.jpg"
               />
             </div>
-            <div className="md:p-2 p-1 w-1/2 hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
+            <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition-all hover:bg-white hover:rounded-xl">
               <Image
                 width="501"
                 height="301"
-                alt="gallery"
+                alt="화성 입주청소"
                 className="w-full object-cover h-full object-center block"
-                src="/501x301.png"
+                src="/gallery/500300군자역.jpg"
               />
             </div>
-            <div className="md:p-2 p-1 w-full hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
+            <div className="md:p-2 p-1 w-full hover:scale-125 transition-all hover:bg-white hover:rounded-xl">
               <Image
                 width="600"
                 height="360"
-                alt="gallery"
+                alt="광명 입주청소"
                 className="w-full h-full object-cover object-center block"
-                src="/600x360.png"
+                src="/gallery/600360남양주.jpg"
               />
             </div>
           </div>
           <div className="flex flex-wrap w-1/2">
-            <div className="md:p-2 p-1 w-full hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
+            <div className="md:p-2 p-1 w-full hover:scale-125 transition-all hover:bg-white hover:rounded-xl">
               <Image
                 width="601"
                 height="361"
-                alt="gallery"
+                alt="안산 입주청소"
                 className="w-full h-full object-cover object-center block"
-                src="/601x361.png"
+                src="/gallery/600360남양주욕실.jpg"
               />
             </div>
-            <div className="md:p-2 p-1 w-1/2 hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
+            <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition-all hover:bg-white hover:rounded-xl">
               <Image
                 width="502"
                 height="302"
-                alt="gallery"
+                alt="인천 입주청소"
                 className="w-full object-cover h-full object-center block"
-                src="/502x302.png"
+                src="/gallery/500360싱크대.jpg"
               />
             </div>
-            <div className="md:p-2 p-1 w-1/2 hover:scale-110 transition-all hover:bg-white hover:rounded-xl">
+            <div className="md:p-2 p-1 w-1/2 hover:scale-125 transition-all hover:bg-white hover:rounded-xl">
               <Image
                 width="503"
                 height="303"
-                alt="gallery"
+                alt="수원 입주청소"
                 className="w-full object-cover h-full object-center block"
-                src="/503x303.png"
+                src="/gallery/500300수납장.jpg"
               />
             </div>
           </div>
