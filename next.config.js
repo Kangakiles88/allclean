@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const sitemap = require("next-sitemap");
+import sitemap from "next-sitemap";
 
 const sitemapConfig = {
   siteUrl: "https://turboclea-n.com",
