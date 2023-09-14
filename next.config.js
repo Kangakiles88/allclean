@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const withSitemap = require("next-sitemap");
+const withSitemap = require("next-sitemap").default;
 
 module.exports = withSitemap({
   // sitemap
