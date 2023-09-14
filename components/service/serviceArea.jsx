@@ -60,6 +60,7 @@ const ServiceArea = () => {
               src={"/kr.svg"}
               width={400}
               height={400}
+              alt="털보클린 입주청소 서비스지역"
               className="w-200 h-200 md:w-400 md:h-400"
             />
           </div>
