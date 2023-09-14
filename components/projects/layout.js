@@ -5,6 +5,7 @@ import Hero from "../home/hero";
 import Step from "../home/step";
 import Feature from "../home/feature";
 import Gallery from "../home/gallery";
+import Description from "../home/description";
 
 const Layout = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <Header />
       <Hero />
       <Feature />
+      <Description />
       <Gallery />
       <Step />
       <div>{children}</div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "../projects/header";
 import Footer from "../projects/footer";
 import ServiceMenu from "../service/serviceMenu";
+import ServiceArea from "../service/serviceArea";
 
 const Service = () => {
   return (
@@ -43,7 +44,7 @@ const Service = () => {
 
                 <Link
                   href="tel:01088806076"
-                  className="inline-flex text-white bg-sky-500  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  className="inline-flex text-white bg-sky-500  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-[0.7rem] md:text-[0.8rem] lg:text-[1rem]"
                 >
                   무료 견적 문의
                 </Link>
@@ -59,13 +60,14 @@ const Service = () => {
               </div>
             </div>
           </div>
+          <ServiceArea />
           <div className="flex flex-col mx-auto items-start justify-start w-3/4 mt-20 mb-10">
             <div className="flex flex-col">
               <h4 className=" text-[1rem] sm:text-[1rem] md:text-[1.5rem] lg:text-3xl mb-10 font-bold text-slate-600">
                 이사, 입주 청소 서비스 안내
               </h4>
               <p className="text-[0.7rem] md:text-[0.8rem] lg:text-[1rem] ">
-                털보클린에서 기본으로 제공하는 청소 서비스는 다음과 같습니다.
+                털보클린 기본 청소 서비스 안내
               </p>
             </div>
           </div>
