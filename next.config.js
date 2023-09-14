@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const withSitemap = require("next-sitemap").default;
+const sitemap = require("next-sitemap");
 
-module.exports = withSitemap({
-  // sitemap
+const sitemapConfig = {
   siteUrl: "https://turboclea-n.com",
   generateRobotsTxt: true,
   transform: async (config, paths) => {
@@ -13,11 +12,17 @@ module.exports = withSitemap({
       priority: 0.7,
     }));
   },
+};
 
+const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ["dummyimage.com"],
-    // other Next.js config
   },
-});
+};
+
+module.exports = {
+  ...sitemap(sitemapConfig),
+  ...nextConfig,
+};
