@@ -6,27 +6,28 @@ import Header from "../projects/header";
 import Footer from "../projects/footer";
 import ServiceMenu from "../service/serviceMenu";
 import ServiceArea from "../service/serviceArea";
+import HeroAnimation from "./../animations/heroAnimation";
 
 const Service = () => {
   return (
     <>
       <Header />
       <section className="text-gray-600 body-font">
-        <div className="container h-[100%] flex-col mx-auto flex items-center justify-center">
-          <div className={styles.service}>
-            <div className="animate-fadeIn w-full flex flex-col text-center items-center justify-center">
-              <h1 className="text-[1rem] sm:text-[1rem] md:text-[1.5rem] lg:text-5xl mb-4 font-bold text-sky-500">
-                O U R S E R V I C E
-              </h1>
+        <div className={styles.service}>
+          <div className="animate-fadeIn w-full flex flex-col text-center items-center justify-center">
+            <h1 className="text-[2rem] sm:text-[2rem] md:text-[2.5rem] lg:text-5xl mb-4 font-bold text-sky-500">
+              O U R S E R V I C E
+            </h1>
 
-              <h2 className="text-white text-[0.8rem]  sm:text-[0.8rem] md:text-[0.9rem] lg:text-2xl  mb-1">
-                Turbo Clean
-              </h2>
-              <p className="text-[0.5rem] text-white">
-                Professional Cleaning Service
-              </p>
-            </div>
+            <h2 className="text-white text-[0.8rem]  sm:text-[0.8rem] md:text-[0.9rem] lg:text-2xl  mb-1">
+              Turbo Clean
+            </h2>
+            <p className="text-[0.5rem] text-white">
+              Professional Cleaning Service
+            </p>
           </div>
+        </div>
+        <div className="container flex-col mx-auto flex items-center justify-center">
           <div className="flex flex-col items-start justify-start w-3/4 mb-20">
             <h2 className=" text-[1rem] sm:text-[1rem] md:text-[1.5rem] lg:text-5xl mb-4 font-bold text-slate-600">
               누구나 만족하는
@@ -49,14 +50,8 @@ const Service = () => {
                   무료 견적 문의
                 </Link>
               </div>
-              <div>
-                <Image
-                  className="mt-20"
-                  width={500}
-                  height={400}
-                  src="/500x300.png"
-                  alt="털보클린 서비스"
-                />
+              <div className="w-full md:w-1/2">
+                <HeroAnimation />
               </div>
             </div>
           </div>

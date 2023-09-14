@@ -58,12 +58,13 @@ const Footer = () => {
           <Link
             href="https://blog.naver.com/allclean_"
             className="w-4 h-4 ml-3 text-gray-500"
+            target="_blank"
           >
             <FontAwesomeIcon icon={faBlog} />
           </Link>
 
           {/* 인스타그램 */}
-          <a className="ml-3 text-gray-500">
+          <Link href="/" className="ml-3 text-gray-500" target="_blank">
             <svg
               fill="none"
               stroke="currentColor"
@@ -76,7 +77,7 @@ const Footer = () => {
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
-          </a>
+          </Link>
         </span>
       </div>
     </footer>

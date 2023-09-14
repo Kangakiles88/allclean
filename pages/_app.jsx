@@ -22,7 +22,18 @@ function MyApp({ Component, pageProps }) {
             `,
           }}
         />
-
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if(!wcs_add) var wcs_add = {};
+              wcs_add["wa"] = "1d699130be5ab60";
+              if(window.wcs) {
+                wcs_do();
+              }
+            `,
+          }}
+        />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index" />
