@@ -81,8 +81,8 @@ const Header = () => {
       {isOpen && (
         <div className="flex flex-col items-center space-y-5 lg:hidden">
           <Link href="/">Home</Link>
-          <Link href="/service">서비스</Link>
-          <Link href="/project">시공갤러리</Link>
+          <Link href="/service">입주청소서비스</Link>
+          <Link href="/project">입주청소 갤러리</Link>
           <Link href="/FAQ">FAQ</Link>
           <button onClick={handleMenuOpen} className="mb-8 text-red-400">
             Close Menu
