@@ -24,7 +24,7 @@ const GalleryItem = ({ data, projects }) => {
       <a className="after:content group relative cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight">
         {url.map((url) => (
           <Image
-            key={data.id}
+            key={url}
             alt={title}
             onClick={handlePopupImg}
             src={url}
