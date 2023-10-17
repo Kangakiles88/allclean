@@ -7,35 +7,34 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        ></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+      ></Script>
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${GA_ID}');
             `,
-          }}
-        />
-        <Script type="text/javascript" src="//wcs.naver.net/wcslog.js"></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
+        }}
+      />
+      <Script type="text/javascript" src="//wcs.naver.net/wcslog.js"></Script>
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
               if(!wcs_add) var wcs_add = {};
               wcs_add["wa"] = "1d699130be5ab60";
               if(window.wcs) {
                 wcs_do();
               }
             `,
-          }}
-        />
-        <Script type="application/ld+json">
-          {`
+        }}
+      />
+      <Script type="application/ld+json">
+        {`
             {
               "@context": "http://schema.org",
               "@type": "Person",
@@ -47,7 +46,8 @@ function MyApp({ Component, pageProps }) {
               ]
             }
           `}
-        </Script>
+      </Script>
+      <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index" />
