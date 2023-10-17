@@ -13,9 +13,11 @@ const Description = () => {
         }`}
       >
         <div className="flex items-center justify-center font-bold mb-10">
-          <h1 className="text-3xl">이사, 입주 청소 고민 이제 그만하세요!</h1>
+          <h1 className="text-2xl md:text-3xl text-center">
+            이사, 입주 청소 고민 이제 그만하세요!
+          </h1>
         </div>
-        <div className="flex flex-col mx-auto items-center w-1/2 text-center">
+        <div className="text-[1rem] md:text-[1.2rem] flex flex-col mx-auto items-center w-1/2 text-center">
           <span>
             <h2 className="text-blue-400">
               전문적인 인력을 통해 최고 등급의 청소 서비스를 경험해보세요!

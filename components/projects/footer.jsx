@@ -64,7 +64,11 @@ const Footer = () => {
           </Link>
 
           {/* 인스타그램 */}
-          <Link href="/" className="ml-3 text-gray-500" target="_blank">
+          <Link
+            href="https://www.instagram.com/turboclea_n"
+            className="ml-3 text-gray-500"
+            target="_blank"
+          >
             <svg
               fill="none"
               stroke="currentColor"

@@ -56,8 +56,8 @@ const Header = () => {
         <div className={`lg:flex ${isOpen ? "" : "hidden"}`}>
           <div className="flex-row hidden lg:flex items-center font-bold text-slate-700 space-x-10">
             <Link href="/">Home</Link>
-            <Link href="/service">서비스</Link>
-            <Link href="/project">시공갤러리</Link>
+            <Link href="/service">입주청소 서비스</Link>
+            <Link href="/project">입주청소 갤러리</Link>
             <Link href="/FAQ">FAQ</Link>
           </div>
         </div>
