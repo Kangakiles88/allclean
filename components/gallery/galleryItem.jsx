@@ -47,6 +47,7 @@ const GalleryItem = ({ data, projects }) => {
                   >
                     {url.map((url) => (
                       <Image
+                        key={data.id}
                         alt={title}
                         src={url}
                         width={720}

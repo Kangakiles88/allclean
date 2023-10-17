@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/Script";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -7,11 +8,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <script
+        <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        ></script>
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -21,8 +22,8 @@ function MyApp({ Component, pageProps }) {
             `,
           }}
         />
-        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-        <script
+        <Script type="text/javascript" src="//wcs.naver.net/wcslog.js"></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               if(!wcs_add) var wcs_add = {};
@@ -33,7 +34,7 @@ function MyApp({ Component, pageProps }) {
             `,
           }}
         />
-        <script type="application/ld+json">
+        <Script type="application/ld+json">
           {`
             {
               "@context": "http://schema.org",
@@ -46,7 +47,7 @@ function MyApp({ Component, pageProps }) {
               ]
             }
           `}
-        </script>
+        </Script>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index" />
