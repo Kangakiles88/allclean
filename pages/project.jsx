@@ -31,27 +31,46 @@ export async function getStaticProps() {
       "content-type": "application/json",
       Authorization: `Bearer ${TOKEN}`,
     },
-
     body: JSON.stringify({
       page_size: 100,
     }),
   };
 
-  const res = await fetch(
-    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
-    options
-  );
-
-  const projects = await res.json();
-
-  projects.results.forEach((project, index) => {
-    console.log(
-      `Project ${index} Image Files:`,
-      project.properties.Image.files
+  try {
+    const res = await fetch(
+      `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
+      options
     );
-  });
 
-  return {
-    props: { projects },
-  };
+    // 응답 상태 코드 확인
+    if (!res.ok) {
+      throw new Error(`Notion API error, status code: ${res.status}`);
+    }
+
+    const projects = await res.json();
+
+    // projects.results가 존재하고 배열인지 확인
+    if (projects.results && Array.isArray(projects.results)) {
+      projects.results.forEach((project, index) => {
+        console.log(
+          `Project ${index} Image Files:`,
+          project.properties.Image.files
+        );
+      });
+
+      return {
+        props: { projects },
+      };
+    } else {
+      throw new Error("Notion API error: No results in response");
+    }
+  } catch (error) {
+    // 오류 로깅
+    console.error("Data fetch error:", error.message);
+
+    // 오류 상황에서 빈 props 반환
+    return {
+      props: { projects: [] },
+    };
+  }
 }
