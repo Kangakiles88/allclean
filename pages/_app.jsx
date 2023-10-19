@@ -8,10 +8,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
+        id="gtag-manager"
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
       ></Script>
       <Script
+        id="gtag-inline-script"
         dangerouslySetInnerHTML={{
           __html: `
               window.dataLayer = window.dataLayer || [];
@@ -23,6 +25,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Script type="text/javascript" src="//wcs.naver.net/wcslog.js"></Script>
       <Script
+        id="naver-script"
         dangerouslySetInnerHTML={{
           __html: `
               if(!wcs_add) var wcs_add = {};
