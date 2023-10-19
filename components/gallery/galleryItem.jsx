@@ -122,7 +122,10 @@ const GalleryItem = ({ data, projects }) => {
                     <p className="text-[0.7rem]">{description}</p>
                     <div>
                       {tags.map((aTag) => (
-                        <span className="text-[0.4rem] px-2 py-1 mr-2 rounded-md bg-black/25">
+                        <span
+                          className="text-[0.4rem] px-2 py-1 mr-2 rounded-md bg-black/25"
+                          key={aTag}
+                        >
                           #{aTag.name}
                         </span>
                       ))}
