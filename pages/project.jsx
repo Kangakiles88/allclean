@@ -59,6 +59,7 @@ export async function getStaticProps() {
 
       return {
         props: { projects },
+        revalidate: 1,
       };
     } else {
       throw new Error("Notion API error: No results in response");
