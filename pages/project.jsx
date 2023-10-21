@@ -12,9 +12,7 @@ const Project = ({ projects }) => {
         <div className="after:content relative col-span-1 row-span-3 flex flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-16 pt-64 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight sm:col-span-2 lg:col-span-1 lg:row-span-2 lg:pt-0">
           <TitleBox />
         </div>
-        {projects.results.map((aProject) => (
-          <GalleryItem key={projects.id} data={aProject} projects={projects} />
-        ))}
+        <GalleryItem data={projects} key={projects.id} />
       </div>
     </section>
   );
@@ -39,7 +37,8 @@ export async function getStaticProps() {
   try {
     const res = await fetch(
       `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
-      options
+      options,
+      { cache: "no-store" }
     );
 
     // 응답 상태 코드 확인
