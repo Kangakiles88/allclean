@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
+  publicRuntimeConfig: {
+    favicon: "/favicon.ico", // 파비콘 파일 경로
+  },
   images: {
     domains: [
       "dummyimage.com",

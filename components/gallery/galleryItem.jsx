@@ -139,7 +139,7 @@ const GalleryItem = ({ data }) => {
                       </svg>
                     </button>
                   )}
-                  <div className="absolute md:top-5 md:left-24 flex items-center gap-2 p-3 text-white">
+                  <div className="absolute to md:top-16 md:left-24 flex items-center gap-2 p-3 text-white">
                     <button
                       className="rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white"
                       onClick={handlePopupImg}
@@ -162,7 +162,7 @@ const GalleryItem = ({ data }) => {
                     </button>
                   </div>
                   <div className="absolute bottom-0 left-2 md:bottom-20 md:left-24 bg-opacity-50 text-white p-4">
-                    <h1 className="text-[1.2rem]">{title}</h1>
+                    <h2 className="text-[1.2rem]">{title}</h2>
                     <p className="text-[0.7rem]">{description}</p>
                     <div>
                       {tags.map((aTag, index) => (
